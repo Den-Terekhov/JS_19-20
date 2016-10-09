@@ -519,16 +519,6 @@ nav {
     border-right: 2px solid #e8e8e8;
   }
 
-  h4 {
-    display: inline-block;
-    height: 100%;
-    padding-left: 10px;
-    font-family: $font-stack;
-    line-height: 40px;
-    color: #2a2d32;
-    font-size: 13px;
-  } 
-
   &_text {
     display: none;
     padding: 25px 0px 40px 35px;
@@ -536,8 +526,19 @@ nav {
     font-family: Arial;
     font-size: 13px;
     line-height: 20px;
+
   }
 }
+
+h4 {
+  display: inline-block;
+  height: 100%;
+  padding-left: 10px;
+  font-family: $font-stack;
+  line-height: 40px;
+  color: #2a2d32;
+  font-size: 13px;
+} 
 
 .active_title {
   background-color: #f4b60d;
@@ -549,6 +550,10 @@ nav {
 
 .active_h4 {
   color: white;
+}
+
+.active_text {
+  display: block;
 }
 
 .trademarks {

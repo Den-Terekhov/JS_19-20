@@ -5,12 +5,16 @@ $(function() {
       $('.accordion_title').removeClass('active_title');
       $('.accordion_plus').replaceWith('<div class="accordion_plus">+</div>');
       $('.accordion_plus').removeClass('active_plus');
+      $('.accordion_title h4').removeClass('active_h4');
       $('.accordion_text').stop(true, true).slideUp(300);
 
     } else {
       
       $('.accordion_title').removeClass('active_title');
-      $(this).addClass('active_title');    
+      $(this).addClass('active_title');        
+
+      $('.accordion_title h4').removeClass('active_h4');
+      $(this).children('h4').addClass('active_h4');    
 
       $('.accordion_plus').replaceWith('<div class="accordion_plus">+</div>');
       $(this).children('.accordion_plus').replaceWith('<div class="accordion_plus">&ndash;</div>');
@@ -53,3 +57,11 @@ var friendsObj = _.flattenDeep(friendsArr, 'name');
 var friends = _.uniq(_.map(friendsObj, 'name'));
 console.log('all friends');
 console.log(friends);
+
+
+var a = 5;
+if (true) {
+  var a = 6;
+  console.log(a)
+}
+  console.log(a)
